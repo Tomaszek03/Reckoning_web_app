@@ -15,7 +15,7 @@ This application was created to settle purchases. It makes it much easier to sum
    ```
     git clone https://github.com/Tomaszek03/Reckoning_web_app.
    ```
-2. Run backend:
+2. Run backend (recommended in a virtual environment):
     ```
     cd backend
     pyton app.py
