@@ -1,0 +1,50 @@
+.navbar {
+    background-color: transparent;
+    overflow: hidden;
+    width: 100%;
+}
+
+.containerNav {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 10px 20px 10px 20px;
+}
+
+.buttonCalc {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #4CAF50;
+}
+
+.buttonCalc:hover {
+    background-color: #45a049;
+}
+
+.buttonHist {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px 1px #008CBA;
+}
+
+.buttonHist:hover {
+    background-color: #007bb5;
+}

@@ -1,0 +1,148 @@
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .table thead th {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 12px;
+    border: 1px solid #dddddd;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .table tbody td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+  }
+  
+  .table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+  }
+  
+  .table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  
+  .table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+  
+  .table .btn {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .table .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .table .btn-danger:hover {
+    background-color: #c0392b;
+  }
+  
+  .table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    
+  }
+  
+  .table input[type="number"] {
+    width: 80%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .table .btn-sm {
+    padding: 3px 8px;
+    font-size: 0.75rem;
+  }
+  
+  .table .btn-sm-danger {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+  }
+
+  .table th button,
+  .table td button {
+    background-color: transparent;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .table td input.form-control {
+    width: auto;
+    min-width: 80px;
+    max-width: 100px;
+  }
+  
+  .table th button:hover,
+  .table td button:hover {
+    color: #c0392b;
+  }
+
+ 
+  .summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    text-align: left;
+    background-color: rgba(121, 246, 246, 0.7);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+td.centered-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+td.checkbox-cell {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+}
+td.checkbox-cell input[type="checkbox"] {
+  display: inline-block;
+  margin: 0;
+  transform: scale(1.2);
+}
+
+  
