@@ -56,6 +56,7 @@ def get_monthly_summary(month):
 
     return jsonify({"total_amount": total_amount}), 200
 
+
 @app.route('/')
 def home():
     return "Welcome to the Transaction API!"
