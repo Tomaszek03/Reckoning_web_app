@@ -11,7 +11,7 @@ This application was created to settle purchases. It makes it much easier to sum
 
 #### How to start application?
 
-1. Clone this repository 
+1. Clone this repository:
    ```
     git clone https://github.com/Tomaszek03/Reckoning_web_app.
    ```
@@ -20,7 +20,7 @@ This application was created to settle purchases. It makes it much easier to sum
     cd backend
     python app.py
     ```
-3. Run fronend (in separate terminal):
+3. Run frontend (in separate terminal):
    ```
    cd frontend
    npm run dev
