@@ -18,7 +18,7 @@ This application was created to settle purchases. It makes it much easier to sum
 2. Run backend (recommended in a virtual environment):
     ```
     cd backend
-    pyton app.py
+    python app.py
     ```
 3. Run fronend (in separate terminal):
    ```
