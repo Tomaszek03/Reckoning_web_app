@@ -1,4 +1,4 @@
-# Reckoning_web_app
+# Reckoning Web App
 
 ### Web Application for reckoning purchases
 
