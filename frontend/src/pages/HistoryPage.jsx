@@ -55,7 +55,7 @@ function History() {
   return (
     <>
       <div className="container mt-4">
-        <div className="header">History od purchases</div>
+        <div className="header">History of purchases</div>
         <h5>Monthly summary: {monthlyTotal} zł</h5>
         <table className="table table-bordered">
           <thead>

@@ -9,6 +9,7 @@ function PriceTable() {
   const [names, setNames] = useState(["Name1", "Name2", "Name3"]);
   const [error, setError] = useState("");
   const [total, setTotal] = useState("");
+  const [totalValueCalculated, setTotalValueCalculated] = useState(0);
   const [submit, setSubmit] = useState(null);
   const [userTotal, setUserTotal] = useState({});
 
@@ -91,6 +92,7 @@ function PriceTable() {
 
     const totalPrice = prices.reduce((acc, row) => acc + row.price, 0);
     const totalValue = parseFloat(total);
+    setTotalValueCalculated(totalPrice);
 
     if (isNaN(totalValue)) {
       setSubmit(null);
@@ -209,8 +211,17 @@ function PriceTable() {
 
       {submit !== null && (
         <div className="alert alert-info">
-          {submit === 1 && <p>Total is greater than the sum of prices.</p>}
-          {submit === 2 && <p>Total is less than the sum of prices.</p>}
+          {submit === 1 && (
+            <p>
+              Total is greater than the sum of prices ({totalValueCalculated}{" "}
+              PLN).
+            </p>
+          )}
+          {submit === 2 && (
+            <p>
+              Total is less than the sum of prices ({totalValueCalculated} PLN).
+            </p>
+          )}
           {submit === 0 && <p>Total matches the sum of prices.</p>}
         </div>
       )}
