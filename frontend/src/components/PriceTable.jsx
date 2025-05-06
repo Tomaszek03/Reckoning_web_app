@@ -214,12 +214,12 @@ function PriceTable() {
           {submit === 1 && (
             <p>
               Total is greater than the sum of prices ({totalValueCalculated}{" "}
-              PLN).
+              zł).
             </p>
           )}
           {submit === 2 && (
             <p>
-              Total is less than the sum of prices ({totalValueCalculated} PLN).
+              Total is less than the sum of prices ({totalValueCalculated} zł).
             </p>
           )}
           {submit === 0 && <p>Total matches the sum of prices.</p>}
@@ -232,7 +232,7 @@ function PriceTable() {
           <ul>
             {Object.entries(userTotal).map(([name, total]) => (
               <li key={name}>
-                {name}: {total.toFixed(2)} zł
+                {name}: {total.toFixed(2)} PLN
               </li>
             ))}
           </ul>
