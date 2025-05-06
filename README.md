@@ -13,7 +13,7 @@ This application was created to settle purchases. It makes it much easier to sum
 
 1. Clone this repository:
    ```
-    git clone https://github.com/Tomaszek03/Reckoning_web_app.
+    git clone https://github.com/Tomaszek03/Reckoning_web_app.git
    ```
 2. Run backend (recommended in a virtual environment):
     ```
