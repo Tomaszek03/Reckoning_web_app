@@ -92,17 +92,21 @@ function PriceTable() {
 
     const totalPrice = prices.reduce((acc, row) => acc + row.price, 0);
     const totalValue = parseFloat(total);
-    setTotalValueCalculated(totalPrice);
 
-    if (isNaN(totalValue)) {
+    const roundedTotalValue = Math.round(totalValue * 100) / 100;
+    const roundedTotalPrice = Math.round(totalPrice * 100) / 100;
+
+    setTotalValueCalculated(roundedTotalPrice);
+
+    if (isNaN(roundedTotalValue)) {
       setSubmit(null);
-    } else if (totalValue > totalPrice) {
+    } else if (roundedTotalValue > roundedTotalPrice) {
       setSubmit(1);
-    } else if (totalValue < totalPrice) {
+    } else if (roundedTotalValue < roundedTotalPrice) {
       setSubmit(2);
     } else {
       setSubmit(0);
-      saveToDB(totalValue);
+      saveToDB(roundedTotalValue);
     }
   };
 
@@ -213,13 +217,14 @@ function PriceTable() {
         <div className="alert alert-info">
           {submit === 1 && (
             <p>
-              Total is greater than the sum of prices ({totalValueCalculated}{" "}
-              zł).
+              Total is greater than the sum of prices (
+              {totalValueCalculated.toFixed(2)} PLN).
             </p>
           )}
           {submit === 2 && (
             <p>
-              Total is less than the sum of prices ({totalValueCalculated} zł).
+              Total is less than the sum of prices (
+              {totalValueCalculated.toFixed(2)} PLN).
             </p>
           )}
           {submit === 0 && <p>Total matches the sum of prices.</p>}

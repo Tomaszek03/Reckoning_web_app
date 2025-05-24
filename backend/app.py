@@ -38,7 +38,6 @@ def save_transaction():
 
 @app.route('/history', methods=['GET'])
 def get_transactions():
-    """Zwraca historię transakcji z bazy danych."""
     with sqlite3.connect('database.db') as conn:
         c = conn.cursor()
         c.execute("SELECT * FROM transactions")

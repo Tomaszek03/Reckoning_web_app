@@ -56,7 +56,7 @@ function History() {
     <>
       <div className="container mt-4">
         <div className="header">History of purchases</div>
-        <h5>Monthly summary: {monthlyTotal} zł</h5>
+        <h5>Monthly summary: {monthlyTotal} PLN</h5>
         <table className="table table-bordered">
           <thead>
             <tr>
@@ -71,7 +71,7 @@ function History() {
                 <th scope="row">{item.id}</th>
                 <td>
                   {item.total_amount
-                    ? item.total_amount + " zł"
+                    ? item.total_amount + " PLN"
                     : "Invalid data"}
                 </td>
                 <td>{item.date}</td>
